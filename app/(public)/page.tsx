@@ -1,5 +1,8 @@
 import Image from 'next/image'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export default function Home() {
   const time = new Date().toLocaleTimeString('en-US')
 
@@ -113,5 +116,3 @@ export default function Home() {
     </main>
   )
 }
-
-export const dynamic = 'force-dynamic'
